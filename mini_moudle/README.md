@@ -24,4 +24,4 @@
 - 根据登录信息匹配用户身份uuid
 - 用户在线状态管理
 
-![积木](https://github.com/We15K/chat/blob/main/mini_moudle/assets/%E7%A7%AF%E6%9C%A8.png)
+![Image text](https://github.com/We15K/chat/blob/main/mini_moudle/assets/%E7%A7%AF%E6%9C%A8.png)
