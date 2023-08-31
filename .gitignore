@@ -32,3 +32,5 @@
 *.app
 
 build/
+mini_moudle/build/
+.vscode/
