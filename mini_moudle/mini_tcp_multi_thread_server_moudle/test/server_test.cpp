@@ -52,13 +52,14 @@ void *TcpServerReceived(void *arg)
                     if (pthread_create(&msgHandle[messageNum], nullptr, TcpSendToClient, (void*)desc[i]) == 0) {
                         std::cout << "Active thraed process messaging" << std::endl;
                     }
-                    std::cout << "id: " << desc[i]->id << std::endl
-                        << "ip: " << desc[i]->ip << std::endl
-                        << "message: " << desc[i]->message << std::endl
-                        << "socket: " << desc[i]->socket << std::endl
-                        << "enable: " << desc[i]->enableMessageRuntime << std::endl;
-				    tcpServer.clean(i);
+                    // start message background thread
                 }
+                std::cout << "id: " << desc[i]->id << std::endl
+                    << "ip: " << desc[i]->ip << std::endl
+                    << "message: " << desc[i]->message << std::endl
+                    << "socket: " << desc[i]->socket << std::endl
+                    << "enable: " << desc[i]->enableMessageRuntime << std::endl;
+                tcpServer.clean(i);
             }
         }
         usleep(1000);
